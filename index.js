@@ -8,6 +8,10 @@ Conn();
 
 const port = 3000;
 
+app.get('/', (req, res) => {
+  res.status(200).json({ message: 'Api Funcionando!' });
+});
+
 const cidadesRouter = require('./routers/cidades.routes');
 app.use('/cidades', cidadesRouter);
 
