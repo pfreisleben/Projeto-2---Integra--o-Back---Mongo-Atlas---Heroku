@@ -6,7 +6,7 @@ const Conn = require('./model/conn/index');
 
 Conn();
 
-const port = 3000;
+const port = process.env.PORT;
 
 app.get('/', (req, res) => {
   res.status(200).json({ message: 'Api Funcionando!' });
