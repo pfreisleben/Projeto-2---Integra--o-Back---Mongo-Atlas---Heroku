@@ -2,6 +2,10 @@
 Essa é uma API criada utilizando as aulas do Módulo 3 de Back End em NodeJS da BlueEdTech.
 
 A idéia é criar um CRUD para várias collections diferentes no MongoDB.
+
+Linguagem Utilizada: *JavaScript*
+Banco de dados: *MongoDB Atlas*
+
 ## Collections utilizadas
       Cidades, Estados e Paises.
       
@@ -55,4 +59,14 @@ A idéia é criar um CRUD para várias collections diferentes no MongoDB.
  ### Caso o objeto seja atualizado com sucesso, a API retornará o seguinte JSON:
       { "message": "Atualizado com sucesso" }
      
+## Excluindo um objeto (DELETE)
+ ### Para deletar um  objeto de alguma collection, deverá ser informado o ID do objeto na rota.
 
+ #### Para deletar um objeto na collection *CIDADES*:
+      Rota: /cidades/delete/{id}
+ #### Para deletar um objeto na collection *ESTADOS*:
+      Rota: /estados/update/{id}
+ #### Para deletar um objeto na collection *PAISES*:
+      Rota: /estados/update/{id}
+ ### Caso o objeto seja deletado com sucesso, a API retornará o seguinte JSON:
+      { "message": "Deletado com sucesso" }
